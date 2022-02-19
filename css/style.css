@@ -24,7 +24,8 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Exo", sans-serif;
   font-weight: 700;
-  color: #222;
+  /* color: #222; */
+  color: green;
 }
 
 h1, .h1 {
@@ -372,6 +373,12 @@ a:focus {
   .text-lg {
     font-size: 28px;
   }
+  .menutoggle{
+    display: flex;
+    align-content: space-around;
+  }.navbar-toggler{
+  margin-left: 10px;
+  }
 }
 
 #navbarmain {
@@ -390,6 +397,9 @@ a:focus {
 
 .dropdown-toggle::after {
   display: none;
+}
+.dropdown-toggle::before {
+  display: flex;
 }
 
 .navbar-brand {
@@ -430,6 +440,7 @@ a:focus {
 
 .dropdown .dropdown-item:hover {
   color: #FF8C00;
+  
 }.goal{
   color: #FF8C00;
 }
@@ -1518,12 +1529,14 @@ input.invalid {
 @media  (max-width:600px){
   .Number{
   font-size: 1rem;
-
   }
   #submit{
     display: flex;
     margin-top: 2%;
     align-items: center;
     justify-content: center;
+  }
+  #muinde{
+    display: none;
   }
 }
