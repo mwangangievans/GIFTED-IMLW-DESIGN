@@ -307,7 +307,7 @@
 												 <div class="appoinment-wrap mt-5 mt-lg-0 pl-lg-5">
 												  <h2 class="mb-2 title-color">Book an appoinment</h2>
 												  <p class="mb-4"><span class="goal"> We love to hear from you.</span></p>
-													 <form id="#" class="appoinment-form" method="post" action="#">
+													 <form id="form" class="appoinment-form" method="post" action="#">
 														  <div class="row">
 															   <div class="col-lg-6">
 																  <div class="form-group">
@@ -318,59 +318,62 @@
 																		<option>Health care financial management</option>
 																		<option>Healthcare technology</option>
 																	  </select>
+																	  <div class="error"></div>
 																  </div>
 															  </div>
 															   <div class="col-lg-6">
 																  <div class="form-group">
-																	  <input name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
-																	  <span role="alert" id="dateError" aria-hidden="true">
-																		Please enter Date
-																	  </span>
+																	  <input name="date" id="date" type="text" required class="form-control" placeholder="dd/mm/yyyy">
+																	  <div class="error"></div>
 																  </div>
 															  </div>
 									  
 															  <div class="col-lg-6">
 																<div class="form-group">
-																	<input name="location" id="location" type="text" class="form-control" placeholder="Enter Your location">
+																	<input name="location" id="location" required type="text" class="form-control" placeholder="Enter Your location">
+																	<div class="error"></div>
 																</div>
 															</div>
 															  <div class="col-lg-6">
 																  <div class="form-group">
-																	  <input name="time" id="time" type="text" class="form-control" placeholder="Time">
+																	  <input name="time" id="time" required type="text" class="form-control" placeholder="Time">
+																	  <div class="error"></div>
 																  </div>
 															  </div>
 															   <div class="col-lg-6">
 																  <div class="form-group">
-																	  <input name="name" id="name" type="text" class="form-control" placeholder="Full Name">
+																	  <input name="fullName" id="name"  required type="text" class="form-control" placeholder="Full Name">
+																	  <div class="error"></div>
 																  </div>
 															  </div>
 									  
 															  <div class="col-lg-6">
 																  <div class="form-group">
-																	  <input name="phone" id="phone" type="Number" class="form-control" placeholder="Phone Number">
-																  </div>
-															  </div>
-															  
-															  <div class="col-lg-6">
-																<div class="form-group">
-																	<input name="Email" id="Email" type="Email" class="form-control" placeholder="Email">
-																</div>
-															</div>
-															  <div class="col-lg-6">
-																<textarea name="message" id="message" class="form-control" rows="6" placeholder="Your Message"></textarea>
-															</div>
-															
-														  </div>
-													
-														  
-														  <a class="btn btn-main btn-round-full" href="confirmation.html" id="submit">Make Appoinment<i class="icofont-simple-right "></i></a> 
-													  </form>
-												  </div>
-											  </div>
-											</div>
-										  </div>
+										<input name="phone" id="phone" type="Number" class="form-control" placeholder="Phone Number">
+									 <div class="error"></div>
+								</div>
+							 </div>
+									<div class="col-lg-6">
+									<div class="form-group">
+								<input name="Email" id="Email" type="Email" required class="form-control" placeholder="Email">
+							<div class="error"></div>
+						</div>
+						</div>
+				  <div class="col-lg-6">
+			<textarea name="message" id="message" class="form-control" rows="6" required placeholder="Your Message"></textarea>
+				<div class="error"></div>
+		</div>
+  </div> 
+ 
+  <a class="btn btn-main btn-round-full" href="confirmation.html" >Make Appoinment<i class="icofont-simple-right "></i></a>
+		
+	  </form>
+  </div>
+	  </div>
+		</div>
+	  </div>
 										</div>
-									  </section>
+	  </section>
 									  
 
 <section class="section testimonial-2 gray-bg">
@@ -643,10 +646,10 @@
     <!-- Google Map -->
     <script src="plugins/google-map/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>    
-    
+    <script src="js/apointmentFormvalidation.js"></script>
     <script src="js/script.js"></script>
     <script src="js/contact.js"></script>
-	<script>src="js/apointmentFormvalidation.js"</script>
+
 
   </body>
   </html>
